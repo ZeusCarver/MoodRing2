@@ -1,0 +1,27 @@
+<h1>Moods</h1>
+
+<p><a href="/new_mood">Add a New Mood</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @moods.each do |mood| %>
+    <tr>
+          <td><%= mood.level %></td>
+          <td><a href="/moods/<%= mood.id %>">Show</a>
+        </td>
+      <td><a href="/moods/<%= mood.id %>/edit">Edit</a></td>
+      <td><a href="/moods/<%= mood.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

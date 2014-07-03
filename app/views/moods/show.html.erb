@@ -1,0 +1,9 @@
+<h1>Mood #<%= @mood.id %></h1>
+
+<div>
+  <strong>Level</strong>:<br />
+  <p><%= @mood.level %></p>
+</div>
+
+<a href="/moods/<%= @mood.id %>/edit">Edit</a> |
+<a href="/moods/<%= @mood.id %>/destroy">Destroy</a>

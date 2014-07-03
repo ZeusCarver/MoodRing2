@@ -1,0 +1,9 @@
+<h1>Action #<%= @action.id %></h1>
+
+<div>
+  <strong>Description</strong>:<br />
+  <p><%= @action.description %></p>
+</div>
+
+<a href="/actions/<%= @action.id %>/edit">Edit</a> |
+<a href="/actions/<%= @action.id %>/destroy">Destroy</a>

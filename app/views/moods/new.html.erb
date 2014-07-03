@@ -1,0 +1,28 @@
+<div>
+  <p></p>
+</div>
+
+<h1>New Mood - <em>Hey <%= @user.name %> how are you feeling now?</em></h1>
+
+<form action="/create_mood">
+  <div>
+    <label for="level">level</label><br />
+    <input id="level" name="level" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+<h1>New Action - <em>Hey <%= @user.name %> what are you doing now?</em></h1>
+
+<form action="/create_action">
+  <div>
+    <label for="description">description</label><br />
+    <input id="description" name="description" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
